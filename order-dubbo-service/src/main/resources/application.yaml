@@ -1,0 +1,22 @@
+# 应用名称
+spring:
+  application:
+    name: order-dubbo-service
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: localhost:8848
+        namespace: public
+server:
+  port: 2008
+
+dubbo: #dubbo与nacos的通信配置
+  application:
+    name: warehouse-dubbo
+  registry: #Provider与Nacos通信地址，与spring.cloud.nacos地址一致
+    address: nacos://localhost:8848
+  protocol:
+    port: 20880 #配置通信端口，默认为20880
+    name: dubbo #通信协议名

@@ -1,0 +1,15 @@
+server:
+  port: 2010
+spring:
+  application:
+    name: order-config-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #Nacos通信地址
+        username: nacos
+        password: nacos
+        namespace: public
+custom: #自定义配置项
+  flag: development
+  database: 192.168.10.31

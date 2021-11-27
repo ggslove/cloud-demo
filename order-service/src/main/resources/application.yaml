@@ -1,0 +1,29 @@
+# 应用名称
+spring:
+  application:
+    name: order-service
+  cloud:
+    nacos:
+      discovery:
+        username: nacos
+        password: nacos
+        server-addr: localhost:8848
+        namespace: public
+
+server:
+  port: 2006
+
+warehouse-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml, application/json
+      min-request-size: 1024
+    response:
+      enabled: true
+  okhttp:
+    enabled: true

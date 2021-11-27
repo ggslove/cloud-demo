@@ -1,0 +1,20 @@
+server:
+  port: 2014 #a:2012/b:2013/c:2014
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+  application:
+    name: c-service #a-service/b-service/c-service
+  sleuth:
+    sampler:
+      probability: 1.0
+      rate: 10000
+  zipkin:
+    base-url: http://localhost:9411
+logging:
+  level:
+    root: debug #为演示需要，开启debug级别日志

@@ -1,0 +1,9 @@
+**/target/*
+**/*.idea
+**/target
+**/.DS_Store
+**/spark-warehouse/*
+.DS_Store
+.idea
+*.iml
+/target/
