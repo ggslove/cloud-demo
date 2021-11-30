@@ -21,6 +21,7 @@
         <module>order-config-service</module>
         <module>sentinel-datasource-nacos</module>
         <module>sleuth-demo</module>
+        <module>rocketmq-demo</module>
     </modules>
     <name>cloud-demo</name>
     <description>cloud-demo</description>

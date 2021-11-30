@@ -1,0 +1,5 @@
+server:
+  port: 2013
+spring:
+  application:
+    name: rocketmq-consumer
