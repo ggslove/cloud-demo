@@ -23,6 +23,7 @@
         <module>sleuth-demo</module>
         <module>rocketmq-demo</module>
         <module>seata-demo</module>
+        <module>jwt-demo</module>
     </modules>
     <name>cloud-demo</name>
     <description>cloud-demo</description>
